@@ -1,5 +1,5 @@
 <script lang="ts">
-  type fetchDataType=Array<Object>;
+  type fetchDataType=Array<{name: string, unicodeFlag: string}>;
   import { defineComponent } from 'vue';
   import card from "./components/card.vue";
   export default defineComponent({
@@ -17,8 +17,6 @@
           const response= await fetch("https://countriesnow.space/api/v0.1/countries/flag/unicode");
           const data=await response.json();
           this.fetchData=data.data;
-          console.log(data);
-          
         }
         catch(error){
           console.log(error);
