@@ -19,8 +19,8 @@
 </template>
 <style scoped>
     .box{
-        height: 150px;
-        width: 150px;
+        height: 250px;
+        width: 250px;
         display: flex;
         gap: 40px;
         justify-content: center;
@@ -28,5 +28,6 @@
     }
     .flag,.country{
         font-size: 30px;
+        text-align: center;
     }
 </style>
